@@ -1,5 +1,9 @@
 
 body {
   background-color: #ADD8E6;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
 }
