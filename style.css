@@ -1,3 +1,12 @@
+html {
+    height: 100%;
+    background: #ddd url(background1.png) repeat;
+}
+
+body {
+    min-height: 100%;
+    background: transparent url(background2.png) center top no-repeat;
+}
 body {
   background-color: light blue;
   font-family: Arial, sans-serif;
