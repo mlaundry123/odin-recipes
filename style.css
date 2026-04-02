@@ -19,6 +19,14 @@ h1 {
   margin-bottom: 20px;
 }
 
+h2, h3 {
+  margin-top: 20px;
+}
+
+p {
+  line-height: 1.6;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -36,4 +44,44 @@ a {
 
 a:hover {
   color: green;
+}
+
+/*Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+/* Recipe buttons on homepage */
+.recipe-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: darkblue;
+  color: white;
+  border-radius: 8px;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.recipe-button:hover {
+  background-color: green;
+  transform: scale(1.05);
+}
+
+/* Home button on recipe pages */
+.home-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 20px;
+  background-color: darkblue;
+  color: white;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: green;
+  transform: scale(1.05);
 }
