@@ -85,3 +85,8 @@ img {
   background-color: green;
   transform: scale(1.05);
 }
+
+main p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
