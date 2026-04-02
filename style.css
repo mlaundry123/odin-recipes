@@ -132,7 +132,18 @@ ol li {
   line-height: 1.6;
 }
 
+/* Extra spacing between sections */
+h2 {
+  margin-top: 30px;
+}
 
+h3 { 
+  margin-top: 30px;
+}
+
+main p {
+  margin-bottom: 30px;
+}
 
 
 
