@@ -45,6 +45,12 @@ a:hover {
   color: green;
 }
 
+/* Remove bullets on homepage list */
+.recipe-list {
+  list-style: none;
+  padding: 0;
+}
+
 /* Images */
 img {
   max-width: 100%;
