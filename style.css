@@ -1,8 +1,39 @@
 body {
   background-color: #ADD8E6;
   color: darkblue;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  background-color: white;
+  width: 60%;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 h1 {
+  color: green;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 15px 0;
+}
+
+a {
+  text-decoration: none;
+  color: darkblue;
+  font-weight: bold;
+}
+
+a:hover {
   color: green;
 }
