@@ -27,15 +27,7 @@ p {
   line-height: 1.6;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin: 15px 0;
-}
-
+/* Links */
 a {
   text-decoration: none;
   color: darkblue;
@@ -46,7 +38,7 @@ a:hover {
   color: green;
 }
 
-/*Images */
+/* Images */
 img {
   max-width: 100%;
   height: auto;
@@ -54,7 +46,7 @@ img {
   margin: 15px 0;
 }
 
-/* Recipe buttons on homepage */
+/* Recipe buttons (homepage) */
 .recipe-button {
   display: inline-block;
   padding: 12px 20px;
@@ -70,7 +62,7 @@ img {
   transform: scale(1.05);
 }
 
-/* Home button on recipe pages */
+/* Home button (recipe pages) */
 .home-button {
   display: inline-block;
   margin-top: 25px;
@@ -86,23 +78,61 @@ img {
   transform: scale(1.05);
 }
 
+/* Paragraph spacing */
 main p {
   margin-bottom: 20px;
   font-size: 16px;
 }
 
-/* Ingredients spacing */
-ul li {
-  margin: 10px 0;
+/* Ingredients box */
+ul {
+  list-style: none;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto 20px auto;
+  text-align: left;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Steps spacing */
+/* Ingredient items */
+ul li {
+  margin: 10px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+/* Checkmarks */
+ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: green;
+  font-weight: bold;
+}
+
+/* Hover effect for ingredients */
+ul li:hover {
+  color: green;
+  transform: translateX(5px);
+  transition: 0.2s;
+}
+
+/* Steps styling */
 ol {
   text-align: left;
   padding-left: 20px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 ol li {
   margin: 10px 0;
   line-height: 1.6;
 }
+
+
+
+
+
