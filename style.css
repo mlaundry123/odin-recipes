@@ -19,12 +19,19 @@ h1 {
   margin-bottom: 20px;
 }
 
-h2, h3 {
-  margin-top: 20px;
+h2 {
+  margin-top: 30px;
+}
+  
+h3 {
+  margin-top: 30px;
 }
 
-p {
-  line-height: 1.6;
+/* Paragraph spacing */
+  main p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /* Links */
@@ -80,33 +87,43 @@ img {
   transform: scale(1.05);
 }
 
-/* Paragraph spacing */
-main p {
-  margin-bottom: 20px;
-  font-size: 16px;
+/* Two-column recipe layout*/
+.recipe-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.ingredients-section,
+.steps-section {
+  flex: 1;
+}
+
+.ingredients-section h3,
+.steps-section h3 {
+  margin-bottom: 15px;
 }
 
 /* Ingredients box */
-ul {
+.ingredients-section ul {
   list-style: none;
   padding: 20px;
   border-radius: 10px;
-  max-width: 400px;
-  margin: 0 auto 20px auto;
+  margin: 0;
   text-align: left;
   background-color: #f5f5f5;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Ingredient items */
-ul li {
+.ingredients-section ul li {
   margin: 10px 0;
   padding-left: 25px;
   position: relative;
 }
 
-/* Checkmarks */
-ul li::before {
+.ingredients-section ul li::before {
   content: "✔";
   position: absolute;
   left: 0;
@@ -114,38 +131,29 @@ ul li::before {
   font-weight: bold;
 }
 
-/* Hover effect for ingredients */
-ul li:hover {
+.ingredients-section ul li:hover {
   color: green;
   transform: translateX(5px);
   transition: 0.2s;
 }
 
-/* Steps styling */
-ol {
+/* Steps section */
+.steps-section ol {
   text-align: left;
   padding-left: 20px;
-  max-width: 500px;
-  margin: 0 auto;
+  margin: 0;
+  max-width: 100%;
 }
 
-ol li {
-  margin: 10px 0;
-  line-height: 1.6;
+.steps-section ol li {
+  margin: 12px 0;
+  line-height: 1.7;
 }
 
-/* Extra spacing between sections */
-h2 {
-  margin-top: 30px;
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .recipe-columns {
+    flex-direction: column;
+  }
 }
-
-h3 { 
-  margin-top: 30px;
-}
-
-main p {
-  margin-bottom: 30px;
-}
-
-
 
